@@ -6,7 +6,7 @@ pipeline {
         echo 'sh \'pwd\''
         sh '''sh \'\'\'
 export GOPATH=microservices-demo-1/go
-cd $WORKSPACE/src/github.com/pmyne/frontend
+cd microservices-demo-1/src/github.com/pmyne/frontend
 go build -o app
 \'\'\''''
       }
