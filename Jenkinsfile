@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'sh \'pwd\''
+        echo 'echo "Current workspace: ${WORKSPACE}"'
         sh 'sh \'cd /src/cartservice && dotnet build\''
       }
     }
