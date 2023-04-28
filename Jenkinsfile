@@ -6,7 +6,8 @@ pipeline {
         echo 'Build Start'
         sh '''echo "Current workspace: ${WORKSPACE}"
 sh \'ls\' '''
-        sh 'sh $pwd'
+        sh '''sh \'cd scr/cartservice && dotnet build\'
+'''
       }
     }
 
