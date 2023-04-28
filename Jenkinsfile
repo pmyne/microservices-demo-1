@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        sh 'echo "Current workspace: ${WORKSPACE}"'
+        sh '''echo "Current workspace: ${WORKSPACE}"
+echo ls'''
         sh 'sh $pwd'
       }
     }
