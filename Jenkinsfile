@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'echo "Current workspace: ${WORKSPACE}"'
+        echo 'Build Start'
         sh 'sh \'cd /src/cartservice && dotnet build\''
+        sh 'echo "Current workspace: ${WORKSPACE}"'
       }
     }
 
