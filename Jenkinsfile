@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Build Start'
         sh '''echo "Current workspace: ${WORKSPACE}"
-echo ls'''
+sh \'ls\' '''
         sh 'sh $pwd'
       }
     }
