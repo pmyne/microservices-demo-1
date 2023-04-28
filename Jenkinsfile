@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        sh '''sh \'cd src/cartservice && dotnet build\'
+        sh '''sh \'cd C:/Users/Myneni/microservices-demo-1/src/cartservice && dotnet build\'
+
 '''
       }
     }
