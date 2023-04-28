@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'sh \'pwd\''
-        sh 'sh \'cd cartservice && dotnet build\''
+        sh 'sh \'cd ./src/cartservice && dotnet build\''
       }
     }
 
