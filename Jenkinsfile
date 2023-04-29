@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        sh 'skaffold build'
+        sh 'skaffold build --default-repo=pmyne/onlineboutique'
       }
     }
 
