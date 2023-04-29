@@ -40,6 +40,8 @@ build:
     context: src/cartservice/src
     docker:
       dockerfile: Dockerfile
+      username: pmyne
+      password: myneni@190578
   - image: frontend
     context: src/frontend
   - image: adservice
