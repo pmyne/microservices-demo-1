@@ -7,7 +7,13 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        
+        container('skaffold') {
+    	script {
+      	docker.withRegistry("https://${SKAFFOLD_DEFAULT_REPO}", 'artifactory-credentials') {                     
+         echo 'skaffold build start'
+          sh "skaffold build"
+      }
+         
       }
     }
 
