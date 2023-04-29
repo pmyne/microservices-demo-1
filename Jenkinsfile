@@ -8,7 +8,7 @@ stages {
   	steps {
     	// Create sonar.properties for sonar maven plugin withCredentials([string(credentialsId: 'sonarqube', variable: 'sonarqubeToken')]) {   
       //sh "echo 'sonar.login=${sonarqubeToken}' >> sonar.properties"
-    }
+    //}
     // Create and test image with skaffold
     container('skaffold') {
     	script {
@@ -17,7 +17,6 @@ stages {
       }
     }
   }
-}
 }
 }
 }
