@@ -9,8 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        sh '''docker build -t cartservice-image ./scr/cartservice/scr
-cd src/cartservice && dotnet build'''
+        sh 'cd src/cartservice'
       }
     }
 
