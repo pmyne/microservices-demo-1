@@ -7,8 +7,9 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Start'
-        
-      }
+        container ('skaffold'){}
+        }
+       
   }
 }
 }
